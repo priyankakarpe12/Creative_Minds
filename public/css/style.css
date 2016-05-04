@@ -67,6 +67,7 @@ table tr th { color: #688a7e;}
     color: #00a0df !important;
 }
 
+
 /*login page*/
 
 .login-body {
@@ -4937,4 +4938,11 @@ span.customSelect.changed {
 }
 .customSelectInner {
     background:url(../img/customSelect-arrow.gif) no-repeat center right;
+}
+
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
 }
