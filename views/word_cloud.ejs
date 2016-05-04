@@ -8,7 +8,7 @@
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Word_Cloud | Creative - Bootstrap 3 Responsive Admin Template</title>
+    <title>Word_Cloud</title>
 
     <!-- Bootstrap CSS -->    
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -21,13 +21,25 @@
     <!-- Custom styles -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
+    <style type="text/css">
+			.wordcloud {
+				border: 1px solid #036;
+				height: 7in;
+				margin: 0.5in auto;
+				padding: 0;
+				page-break-after: always;
+				page-break-inside: avoid;
+				width: 7in;
+			}
+	</style>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
       <script src="js/lte-ie7.js"></script>
-    <![endif]-->
+    <!--[endif]-->
+    
   </head>
 
   <body>
@@ -35,7 +47,7 @@
   <section id="container" class="">
       <!--header start-->
       
-      <<header class="header dark-bg">
+      <header class="header dark-bg">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
             </div>
@@ -192,14 +204,31 @@
                               Businesses
                           </header>
                           <div class="list-group">
-                              <a class="list-group-item " href="#">
-                                  Lorem ipsum dolor sit amet
-                              </a>
-                              <a class="list-group-item active" href="javascript:;">Praesent tempus eleifend risus</a>
-                              <a class="list-group-item" href="javascript:;">Praesent tempus eleifend risus</a>
+                              <a id="Uber" class="list-group-item " href="#" draggable="true" ondragstart="drag(event)">Uber</a>
+                              <a id="IndianBBQ" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >Indian BBQ</a>
+                              <a id="Subway" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >Subway</a>
+                              <a id="VickyDiner" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >Vicky Diner</a>
+                              <a id="Starbucks" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >Starbucks</a>
+                              <a id="GreekCafe" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >GreekCafe</a>
+                              <a id="MimiBoutique" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >Mimi Boutique</a>
+                              <a id="Wang" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >Wang's Kitchen</a>
+                              <a id="Marvel" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >Marvel</a>
+                              <a id="OpaLife" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >Opa Life</a>
+                              <a id="BananaLeaf" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >Banana Leaf</a>
+                              
+                              <a id="Lift" class="list-group-item " href="#" draggable="true" ondragstart="drag(event)">Lift</a>
+                              <a id="TiaSalon" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >TiaSalon</a>
+                              <a id="KFC" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >KFC</a>
+                              <a id="Denny" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >Denny's</a>
+                              <a id="Walmart" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >Walmart</a>
+                              <a id="Pete" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >Pete</a>
+                              <a id="Target" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >Target</a>
+                              <a id="WilsonLeather" class="list-group-item" href="#" draggable="true" ondragstart="drag(event)" >Wilson Leather</a>
+                              
+                             <!-- <a class="list-group-item" href="javascript:;">Praesent tempus eleifend risus</a>
                               <a class="list-group-item" href="javascript:;">Porta ac consectetur ac</a>
                               <a class="list-group-item" href="javascript:;">Vestibulum at eros</a>
-                              <a class="list-group-item" href="javascript:;">Vestibulum at eros</a>
+                              <a class="list-group-item" href="javascript:;">Vestibulum at eros</a> -->
                           </div>
                       </section>
 					  </div>
@@ -209,10 +238,10 @@
                           <div class="col-lg-9">
                               <section class="panel">
                                   <header class="panel-heading" id="Business_Name">
-                                      Business_Name
+                                      
                                   </header>
-                                  <div class="panel-body text-center">
-                                      <canvas id="bar" height="300" width="500"></canvas>
+                                  <div  id="wordcloud" class="panel-body text-center" style="height:300px;width:auto;" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                      <!-- <canvas height="300" width="500"></canvas> -->
                                   </div>
                               </section>
                           </div>
@@ -243,6 +272,12 @@
     <script src="js/chartjs-custom.js"></script>
     <!--custome script for all page-->
     <script src="js/scripts.js"></script>
+    <!-- word_cloud specific scripts -->
+    <script src="js/word_cloud/jquery.awesomeCloud-0.2.js"></script>
+    <script src="js/word_cloud/jquery.awesomeCloud-0.2.min.js"></script>
+    <script src="js/word_cloud/word_cloud.js"></script>
+     
+    
 
   </body>
 </html>

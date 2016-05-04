@@ -8,7 +8,7 @@
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Word_Cloud | Creative - Bootstrap 3 Responsive Admin Template</title>
+    <title>Reviews</title>
 
     <!-- Bootstrap CSS -->    
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +35,7 @@
   <section id="container" class="">
       <!--header start-->
       
-      <<header class="header dark-bg">
+      <header class="header dark-bg">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
             </div>
@@ -186,7 +186,7 @@
 						
                       <div class="row">
 					  
-					  <div class="col-lg-3">
+					  <!--<div class="col-lg-3">
 					  <section class="panel">
                           <header class="panel-heading">
                               Select Review Analysis Type
@@ -197,11 +197,11 @@
                               <a class="list-group-item" href="javascript:;">Daily</a>
                           </div>
                       </section>
-					  </div>
+					  </div>-->
 					  
                                        
                           <!-- Bar -->
-                          <div class="col-lg-9">
+                          <div class="col-lg-12">
                               <section class="panel">
                                   <header class="panel-heading" id="Analysis_Type">
                                       Analysis_Type
@@ -209,7 +209,8 @@
                                   <div class="panel-body text-center">
 								  
 								  <!-- Insert the code for line grph over here -->
-                                      <canvas id="review_Line_Graph" height="300" width="500"></canvas>
+								  <div  id="container_graph" style="min-width: 310px; height: 400px; margin: 0 auto">
+                                     <!-- <canvas id="review_Line_Graph" height="300" width="500"></canvas> -->
                                   </div>
                               </section>
                           </div>
@@ -240,6 +241,10 @@
     <script src="js/chartjs-custom.js"></script>
     <!--custome script for all page-->
     <script src="js/scripts.js"></script>
+    <script src="js/checkins/jquery.min.js"></script>
+    <script src="js/checkins/highcharts.js"></script>
+	<script src="js/checkins/exporting.js"></script>
+	<script src="js/reviews/reviews.js"></script>
 
   </body>
 </html>
